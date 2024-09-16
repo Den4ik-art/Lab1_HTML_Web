@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Task 3</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="title">
+        <h1>Registration Form for artist</h1>
+        <h2>Havatiuk Denis Vyacheslavovich</h2> 
+        <p>Group CS-31. Variant 3</p>
+        <p><a class="reverse"href="index.html">Task 1</a></p>
+    </div>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        <label for="referrer">Your favorite artist?
+            <select id="referrer" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">Pablo Picasso</option>
+              <option value="2">Leonardo da Vinci</option>
+              <option value="3">Michelangelo</option>
+              <option value="4">Rembrandt</option>
+              <option value="5">Vincent van Gogh</option>
+              <option value="6">Salvador Dalí</option>
+              <option value="7">Raphael</option>
+              <option value="8">Claude Monet</option>
+              <option value="9">Other</option>
+            </select>
+          </label>
+      </fieldset>
+
+      <fieldset>
+        <h2 class="Second">Personal data</h2>
+
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="10" max="120" /></label>
+    
+        <label for="colorPicker">Choose your favorite color:</label>
+        <input type="color" id="colorPicker" name="colorPicker" value="#ffffff">
+
+        <label for="website">Your own portfolio web page:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com" required>
+
+        <label for="genre">Your favorite genre in painting:</label>
+        <label for="personal-account"><input id="personal-account" type="checkbox" name="account-type" class="inline" checked /> Self portrait</label>
+        <label for="business-account"><input id="business-account" type="checkbox" name="account-type" class="inline" /> Poster</label>
+        <label><input type="checkbox" name="account-type" class="inline" /> Meditative painting</label>
+        <label><input type="checkbox" name="account-type" class="inline" /> Parsuna</label>
+        <label><input type="checkbox" name="account-type" class="inline" /> Landscape</label>
+        <label><input type="checkbox" name="account-type" class="inline" /> Household genre</label>
+        <label><input type="checkbox" name="account-type" class="inline" /> Portrait</label>
+        <label><input type="checkbox" name="account-type" class="inline" /> Birds and flowers</label>
+
+        <label for="bio">Detailed description of one's own artistic preferences:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like painting..."></textarea>
+          </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
