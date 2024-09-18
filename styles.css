@@ -96,3 +96,8 @@ th, td {
 .secondrow {
   background-color: green;
 }
+
+.checking {
+  text-decoration: none;
+  color:#ffffff;
+}

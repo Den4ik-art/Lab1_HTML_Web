@@ -1,15 +1,17 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="uk">
 <head>
-<title>Task 3</title>
-<link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div class="title">
         <h1>Registration Form for artist</h1>
-        <h2>Havatiuk Denis Vyacheslavovich</h2> 
+        <h2>Havatiuk De<a class="checking" href="checking.html">n</a>is Vyacheslavovich</h2> 
         <p>Group CS-31. Variant 3</p>
-        <p><a class="reverse"href="index.html">Task 1</a></p>
+        <p><a class="reverse" href="index.html">Task 1</a></p>
     </div>
     <form method="post" action='https://register-demo.freecodecamp.org'>
       <fieldset>
@@ -44,15 +46,15 @@
         <label for="website">Your own portfolio web page:</label>
         <input type="url" id="website" name="website" placeholder="https://example.com" required>
 
-        <label for="genre">Your favorite genre in painting:</label>
+        <label>Your favorite genre in painting:</label>
         <label for="personal-account"><input id="personal-account" type="checkbox" name="account-type" class="inline" checked /> Self portrait</label>
         <label for="business-account"><input id="business-account" type="checkbox" name="account-type" class="inline" /> Poster</label>
-        <label><input type="checkbox" name="account-type" class="inline" /> Meditative painting</label>
-        <label><input type="checkbox" name="account-type" class="inline" /> Parsuna</label>
-        <label><input type="checkbox" name="account-type" class="inline" /> Landscape</label>
-        <label><input type="checkbox" name="account-type" class="inline" /> Household genre</label>
-        <label><input type="checkbox" name="account-type" class="inline" /> Portrait</label>
-        <label><input type="checkbox" name="account-type" class="inline" /> Birds and flowers</label>
+        <label for="meditative-account"><input id="meditative-account" type="checkbox" name="account-type" class="inline" /> Meditative painting</label>
+        <label for="parsuna-account"><input id="parsuna-account" type="checkbox" name="account-type" class="inline" /> Parsuna</label>
+        <label for="landscape-account"><input id="landscape-account" type="checkbox" name="account-type" class="inline" /> Landscape</label>
+        <label for="household-account"><input id="household-account" type="checkbox" name="account-type" class="inline" /> Household genre</label>
+        <label for="portrait-account"><input id="portrait-account" type="checkbox" name="account-type" class="inline" /> Portrait</label>
+        <label for="birds-flowers-account"><input id="birds-flowers-account" type="checkbox" name="account-type" class="inline" /> Birds and flowers</label>
 
         <label for="bio">Detailed description of one's own artistic preferences:
             <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like painting..."></textarea>
